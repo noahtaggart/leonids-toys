@@ -44,6 +44,9 @@ const ducky = {
 
 toys.push(ducky)
 
+for (const toy of toys)
+    toy.price = toy.price * 1.05
+
 for (const toy of toys) {
     console.log(`The ${toy.name} action figure from ${toy.mfr} only costs the low low price of $${toy.price}!`)
 }
