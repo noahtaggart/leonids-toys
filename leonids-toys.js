@@ -45,5 +45,5 @@ const ducky = {
 toys.push(ducky)
 
 for (const toy of toys) {
-    console.log(toy.name)
+    console.log(`The ${toy.name} action figure from ${toy.mfr} only costs the low low price of $${toy.price}!`)
 }
