@@ -27,7 +27,7 @@ const toys = [
 
 
 const boPeep = {
-    id:4,
+    id: 4,
     name: "Bo Peep",
     mfr: "Disney",
     price: 20.00,
@@ -36,17 +36,19 @@ const boPeep = {
 toys.push(boPeep)
 
 const ducky = {
-    id:5,
-    name:"Ducky",
-    mfr:"Disney",
-    price:8.81,
+    id: 5,
+    name: "Ducky",
+    mfr: "Disney",
+    price: 8.81,
 }
 
 toys.push(ducky)
 
-for (const toy of toys)
-    toy.price = toy.price * 1.05
+toyToFind = 2
 
 for (const toy of toys) {
-    console.log(`The ${toy.name} action figure from ${toy.mfr} only costs the low low price of $${toy.price}!`)
+    if (toy.id === toyToFind) {
+        toy.price = toy.price * 1.05,
+        console.log(`The ${toy.name} action figure from ${toy.mfr} only costs the low low price of $${toy.price}!`)
+    }
 }
