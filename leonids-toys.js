@@ -24,6 +24,26 @@ const toys = [
     }
 ]
 
+
+
+const boPeep = {
+    id:4,
+    name: "Bo Peep",
+    mfr: "Disney",
+    price: 20.00,
+}
+
+toys.push(boPeep)
+
+const ducky = {
+    id:5,
+    name:"Ducky",
+    mfr:"Disney",
+    price:8.81,
+}
+
+toys.push(ducky)
+
 for (const toy of toys) {
     console.log(toy.name)
 }
